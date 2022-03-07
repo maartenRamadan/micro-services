@@ -30,8 +30,8 @@ jobs:
         uses: google-github-actions/setup-gcloud@v0
         with:
           project_id: ${{env.PROJECT}}
-          # service_account_key: ${{ secrets.private_key }}
-          # export_default_credentials: true
+          service_account_key: ${{ secrets.private_key }}
+          export_default_credentials: true
 
       # - name: deploy cloud function
       #   id: deploy
