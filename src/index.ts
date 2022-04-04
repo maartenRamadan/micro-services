@@ -1,4 +1,4 @@
-import * as functions from "firebase-functions";
+// import * as functions from "firebase-functions";
 import * as express from "express";
 import {
   addRoutes,
@@ -59,4 +59,5 @@ app.get("/", (req, res) =>
   })
 );
 
-exports.app = functions.https.onRequest(app);
+// exports.app = functions.https.onRequest(app);
+app.listen(80);
